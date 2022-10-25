@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <style>
+        table{
+            background-image: url(img/background.jpg); 
+            font-size: 140%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+    
+    
+    <br><br>
+    <form  onsubmit="return validaFormulario();"action="Registro.html" method="get">
+        <div style="text-align:center;padding: 50px; color:#D0D3D4"> 
+            <table >
+            <tr> 
+                <th colspan="10" style="background-color: #1ABC9C;">Registro de Usuarios</th>
+                  
+            </tr>
+            <tr>
+                <td><label for="txtnom">Nombre</label></td>
+              <td align="left"><input  type="text"   name="nombre" id="nombre" size="30" maxlength="25" placeholder="Ingrese su nombre">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="txtape">Apellidos</label></td>
+                <td align="left"><input type="text"  name="apellidos" id="apellidos" size="30" maxlength="30" placeholder="Ingrese sus apellidos"></td>
+            </tr>
+            <tr>
+                <td><label>Cuenta</label></td>
+                <td align="left"><input type="email" name="cuenta"  id="cuenta" size="30" maxlength="30" placeholder="@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label>Contraseña</label></td>
+                <td align="left"><input type="password"  name="password" id="password" size="30" maxlength="10" placeholder="Ingrese su Contraseña"></td>
+            </tr>
+            <tr>
+                        
+                <td><label>Género</label></td>
+                <td align="left">
+                    <input type="radio" id="h" name="genero" value="hombre" checked>
+                    <label for="h">Masculino</label><br>
+                    <input type="radio" id="m" name="genero" value="Mujer">
+                    <label for="m">Femenino</label><br>
+                    
+                </td>
+            </tr>
+            <td><label style="color: black;">¿Cómo se entero del sitio?</label></td>
+                <td align="left">
+                    <input type="checkbox" id="r1" name="sitio1" value="Radio">
+                    <label for="r1"> Radio</label><br>
+                    <input type="checkbox" id="r2" name="sitio2" value="Televición">
+                    <label for="r2"> Televición</label><br>
+                    <input type="checkbox" id="r3" name="sitio3" value="Periodico">
+                    <label for="r3"> Periodico</label>
+                    <input type="checkbox" id="r5" name="sitio5" value="Otro">
+                    <label for="r5">Otro</label>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Fecha de nacimiento</label></td>
+                <td align="left"><input type="date"  name="fecNac" id="fecNac"></td>
+            </tr>
+            
+           <tr>
+               <td colspan="2">
+                   <br><br>
+                <div style="background-color: rgb(81, 91, 134); " >
+                    <input type="submit" value="Enviar">
+                <input type="reset"  value="Limpiar">
+                     
+                </div>
+               </td>
+           </tr>
+        </table>
+        
+          
+        </div>
+         
+    </form>
+    <script src="Validación.js"></script>
+</body>
+</html>
